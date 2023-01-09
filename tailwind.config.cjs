@@ -18,9 +18,13 @@ module.exports = {
         "grayishBlue": "hsl(210, 4%, 67%)",
       },
       backgroundImage: {
-        'hero-section-desktop': "url('src/assets/images/desktop/image-header.jpg')",
-        'hero-section-mobile': "url('src/assets/images/mobile/image-header.jpg')",
-      }
+        "hero-section-desktop": "url('/images/desktop/image-header.jpg')",
+        "hero-section-mobile": "url('/images/mobile/image-header.jpg')",
+        "offers-graphic-desktop": "url('/images/desktop/image-graphic-design.jpg')",
+        "offers-graphic-mobile": "url('/images/mobile/image-graphic-design.jpg')",
+        "offers-photography-desktop": "url('/images/desktop/image-photography.jpg')",
+        "offers-photography-mobile": "url('/images/mobile/image-photography.jpg')",
+      },
     },
     fontFamily: {
       "barlow": ["Barlow"],

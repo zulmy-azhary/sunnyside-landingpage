@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { OffersCard } from ".";
+import { OffersCard, OffersSubCard } from ".";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { computed } from "vue";
-const { width } = useMediaQuery();
 
+const { width } = useMediaQuery();
 const imagePath = computed(() => (width.value >= 768 ? "desktop" : "mobile"));
 </script>
 
@@ -25,17 +25,21 @@ const imagePath = computed(() => (width.value >= 768 ? "desktop" : "mobile"));
       Using a collaborative formula of designers, researchers, photographers, videographers, and
       copywriters, we'll build and extend your brand in digital places.
     </OffersCard>
-    <div class="flex justify-between flex-col-reverse md:flex-row">
-      <div
-        class="basis-1/2 md:w-1/2 min-h-[24rem] max-h-[24rem] md:min-h-[28rem] lg:min-h-[40rem] object-cover"
+    <div class="flex justify-between flex-col md:flex-row">
+      <OffersSubCard
+        title="Graphic Design"
+        class="text-darkDesaturatedCyan bg-offers-graphic-mobile md:bg-offers-graphic-desktop"
       >
-        <img src="src/assets/images/desktop/image-graphic-design.jpg" alt="Image Banner" />
-      </div>
-      <div
-        class="basis-1/2 md:w-1/2 min-h-[24rem] max-h-[24rem] md:min-h-[28rem] lg:min-h-[40rem] object-cover"
+        Great design makes you memorable. We deliver artwork that underscores your brand message and
+        captures potential clients' attention.
+      </OffersSubCard>
+      <OffersSubCard
+        title="Photography"
+        class="text-darkBlue bg-offers-photography-mobile md:bg-offers-photography-desktop"
       >
-        <img src="src/assets/images/desktop/image-photography.jpg" alt="Image Banner" />
-      </div>
+        Increase your credibility by getting the most stunning, high-quality photos that improve
+        your business image.
+      </OffersSubCard>
     </div>
   </section>
 </template>
