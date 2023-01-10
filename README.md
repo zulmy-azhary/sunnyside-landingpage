@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://www.frontendmentor.io/solutions/launch-countdown-timer-It67BFxnv7)
-- Live Site URL: [Click here](https://zoel-countdowntimer.vercel.app/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-WDK6JsK7WG)
+- Live Site URL: [Click here](https://zoel-sunnyside.vercel.app)
 
 ## My process
 
