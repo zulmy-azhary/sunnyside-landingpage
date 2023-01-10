@@ -1,8 +1,8 @@
-import { onMounted, onUnmounted } from "vue";
+import { Ref, onMounted, onUnmounted } from "vue";
 
-const useClickOutside = <T>(ref: T | null, callback: () => void) => {
+const useClickOutside = (ref: Ref<HTMLDivElement>, callback: () => void) => {
   const handleClickOutside = (event: Event) => {
-    if (ref.value && !ref.value.contains(event.target as T)) {
+    if (ref.value && !ref.value?.contains(event.target as HTMLDivElement)) {
       callback();
     }
   };

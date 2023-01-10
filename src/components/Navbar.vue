@@ -7,7 +7,7 @@ import { ref, computed } from "vue";
 const { width } = useMediaQuery();
 const isOpen = ref(false);
 const isTablet = computed(() => (width.value >= 768 ? (isOpen.value = false) : isOpen.value));
-const container = ref<HTMLDivElement | null>(null);
+const container = ref();
 
 const handleClick = () => {
   isOpen.value = !isOpen.value;
