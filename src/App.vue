@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Gallery, Hero, Navbar, Offers, Testimonials } from "./components";
+import { Footer, Gallery, Hero, Navbar, Offers, Testimonials } from "./components";
 </script>
 
 <template>
@@ -9,5 +9,6 @@ import { Gallery, Hero, Navbar, Offers, Testimonials } from "./components";
     <Offers />
     <Testimonials />
     <Gallery />
+    <Footer />
   </main>
 </template>

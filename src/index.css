@@ -16,10 +16,28 @@
   @apply font-barlow;
 }
 
-h1, h2, h3, h4, h5, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
   @apply font-fraunces;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
 }
 
 img {
   @apply select-none;
+}
+
+.button {
+  @apply transition-all hover:bg-opacity-25 uppercase text-base font-bold px-8 py-4 rounded-full;
+}
+
+.nav-mobile {
+  @apply flex flex-col justify-center items-center gap-y-7 py-10 text-xl font-semibold relative after:absolute after:bg-triangle after:top-0 after:right-0 after:w-12 after:h-12 after:-translate-y-1/2;
 }
